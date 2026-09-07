@@ -1,0 +1,23 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify static files
+        run: |
+          test -f index.html || (echo "index.html missing" && exit 1)
+          test -f style.css || (echo "style.css missing" && exit 1)
+          test -f script.js || (echo "script.js missing" && exit 1)
+
+      - name: Test Docker build
+        run: docker build -t tracker-app:latest .
