@@ -1,11 +1,24 @@
-# Используем ультралегковесный образ веб-сервера Nginx
-FROM nginx:alpine
+FROM python:3.11-slim
 
-# Копируем всю статику проекта (html, css, js) в рабочую папку сервера Nginx
-COPY . /usr/share/nginx/html
+WORKDIR /app
 
-# Информируем, что контейнер слушает стандартный веб-порт 80
-EXPOSE 80
+# Системные пакеты для сборки и корректной работы с PostgreSQL
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
 
-# Запуск веб-сервера в режиме foreground (чтобы контейнер не завершался)
-CMD ["nginx", "-g", "daemon off;"]
+# Копируем и устанавливаем зависимости Python
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копируем пакет бэкенда (с __init__.py для корректной работы относительных импортов)
+COPY __init__.py database.py main.py models.py ./app/
+
+# Копируем статику фронтенда в каталог /app/frontend
+COPY index.html style.css script.js ./frontend/
+
+EXPOSE 8000
+
+# Запускаем FastAPI через Uvicorn как модуль app.main
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
