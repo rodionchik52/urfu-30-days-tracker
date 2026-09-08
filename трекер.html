@@ -11,7 +11,674 @@
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
+  :root{
+    --paper:#EEF3FA;
+    --card:#FFFFFF;
+    --ink:#16232F;
+    --ink-soft:#5C6B7A;
+    --blue:#166EC1;
+    --blue-dark:#0E4A85;
+    --blue-soft:#E3EEFB;
+    --gold:#C99A2E;
+    --green:#3F8361;
+    --green-soft:#E4F0E9;
+    --line:#D7E1EC;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  html,body{margin:0;padding:0;overscroll-behavior-y:contain;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Manrope',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    touch-action:manipulation;
+    padding-bottom:calc(48px + env(safe-area-inset-bottom));
+    min-height:100vh;
+    min-height:100dvh;
+  }
+  h1,h2,.serif{font-family:'PT Serif',serif;}
+  .wrap{
+    max-width:640px;margin:0 auto;
+    padding:calc(16px + env(safe-area-inset-top)) 16px 0;
+  }
+
+  /* ---------- header ---------- */
+  header.hero{padding:8px 0 18px;}
+  .brand-row{display:flex;align-items:center;gap:10px;margin:0 0 16px;}
+  .brand-logo{width:28px;height:auto;flex:0 0 auto;}
+  .brand-text{font-family:'PT Serif',serif;font-weight:700;font-size:15px;color:var(--blue-dark);letter-spacing:.2px;}
+  .eyebrow{font-size:13px;color:var(--ink-soft);margin:0 0 6px;}
+  .day-count{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .day-count .num{font-size:clamp(38px,11vw,48px);line-height:1;font-weight:700;}
+  .day-count .of{font-size:15px;color:var(--ink-soft);}
+  .start-date-btn{
+    background:none;border:none;color:var(--blue);font:inherit;font-size:13px;
+    padding:0;margin-top:6px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;
+  }
+
+  .progress-row{margin-top:18px;}
+  .progress-row .pct{font-family:'PT Serif',serif;font-size:20px;font-weight:700;}
+  .progress-track{
+    height:10px;background:var(--card);border:1px solid var(--line);border-radius:999px;
+    overflow:hidden;margin-top:8px;
+  }
+  .progress-fill{
+    height:100%;background:var(--blue-dark);border-radius:999px;
+    transition:width .5s ease;
+  }
+  .progress-caption{font-size:13px;color:var(--ink-soft);margin-top:6px;}
+
+  /* ---------- day strip ---------- */
+  .day-strip-section{margin-top:26px;}
+  .section-label{font-size:15px;font-weight:700;margin:0 0 10px;}
+  .day-strip{
+    display:flex;gap:8px;overflow-x:auto;overflow-y:visible;padding:8px 16px 14px;
+    margin:0 -16px;
+    scroll-padding-left:16px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:var(--line) transparent;
+  }
+  .day-strip::-webkit-scrollbar{height:6px;}
+  .day-strip::-webkit-scrollbar-track{background:transparent;}
+  .day-strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:999px;}
+  .day-strip::-webkit-scrollbar-thumb:hover{background:var(--ink-soft);}
+  .day-dot{
+    flex:0 0 auto;scroll-snap-align:start;
+    width:48px;height:66px;border-radius:10px;
+    background:var(--card);border:1px solid var(--line);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    cursor:pointer;font-size:13px;color:var(--ink-soft);gap:3px;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .day-dot:active{transform:scale(0.94);}
+  .day-dot .n{font-weight:700;color:var(--ink);}
+  .day-dot .d{font-size:10px;color:var(--ink-soft);white-space:nowrap;}
+  .day-dot .mark{width:6px;height:6px;border-radius:50%;background:var(--line);}
+  .day-dot.has-tasks .mark{background:var(--blue);}
+  .day-dot.done .mark{background:var(--green);}
+  .day-dot.done{background:var(--green-soft);border-color:var(--green);}
+  .day-dot.partial .mark{background:var(--gold);}
+  .day-dot.partial{border-color:var(--gold);}
+  .day-dot.today{border-color:var(--blue-dark);border-width:2px;}
+  .day-dot.selected{border-color:var(--blue);box-shadow:0 0 0 2px var(--blue-soft) inset;}
+
+  .day-filter-chip{
+    display:inline-flex;align-items:center;gap:6px;margin-top:8px;
+    background:var(--blue-soft);color:var(--blue);border:none;border-radius:999px;
+    padding:6px 12px;font-size:13px;font-family:inherit;font-weight:600;cursor:pointer;
+  }
+
+  /* ---------- category filters ---------- */
+  .cat-row{
+    display:flex;gap:8px;overflow-x:auto;padding:2px 16px 10px;margin:22px -16px 0;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:var(--line) transparent;
+  }
+  .cat-row::-webkit-scrollbar{height:6px;}
+  .cat-row::-webkit-scrollbar-track{background:transparent;}
+  .cat-row::-webkit-scrollbar-thumb{background:var(--line);border-radius:999px;}
+  .cat-row::-webkit-scrollbar-thumb:hover{background:var(--ink-soft);}
+  .cat-chip{
+    flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);
+    border-radius:999px;padding:10px 14px;font-size:13.5px;font-family:inherit;font-weight:600;
+    cursor:pointer;min-height:40px;
+  }
+  .cat-chip.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+  /* ---------- task list ---------- */
+  .task-list{margin-top:18px;display:flex;flex-direction:column;gap:10px;}
+  .task-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:14px;display:flex;gap:12px;align-items:flex-start;
+    border-left:4px solid var(--cat-color, var(--blue));
+  }
+  .task-card.done{background:var(--green-soft);}
+  .checkbox-hit{
+    flex:0 0 auto;width:44px;height:44px;margin:-10px 0;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+  }
+  .checkbox{
+    width:24px;height:24px;border-radius:7px;border:2px solid var(--ink-soft);
+    display:flex;align-items:center;justify-content:center;background:var(--card);
+    transition:transform .12s ease;
+  }
+  .checkbox.checked{background:var(--green);border-color:var(--green);}
+  .checkbox.blocked{background:var(--gold);border-color:var(--gold);}
+  .checkbox-hit:active .checkbox{transform:scale(0.88);}
+  .checkbox svg{width:14px;height:14px;display:none;}
+  .checkbox.checked svg{display:block;}
+  .checkbox.blocked .bang{display:block;font-family:inherit;font-weight:800;font-size:14px;color:#fff;line-height:1;}
+  .checkbox .bang{display:none;}
+  .task-card.blocked{background:#FBF3E3;}
+  .task-body{flex:1;min-width:0;}
+  .task-title{font-size:15px;font-weight:600;line-height:1.4;}
+  .task-title.done{text-decoration:line-through;color:var(--ink-soft);}
+  .task-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center;}
+  .task-tag{font-size:12px;color:var(--ink-soft);}
+  .task-note{font-size:12.5px;margin-top:6px;padding:6px 9px;border-radius:8px;line-height:1.4;}
+  .task-note.artifact{background:var(--green-soft);color:#2C5F44;}
+  .task-note.reason{background:#F5E8C9;color:#7A5B12;}
+  .guide-link{
+    font-size:13px;color:var(--blue);background:none;border:none;font-family:inherit;
+    font-weight:600;cursor:pointer;padding:10px 0;margin:-10px 0;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+  .empty-state{
+    text-align:center;color:var(--ink-soft);padding:36px 16px;font-size:14px;
+  }
+
+  /* ---------- footer ---------- */
+  .footer{
+    max-width:640px;margin:34px auto 0;text-align:center;
+    padding:16px 16px calc(16px + env(safe-area-inset-bottom));
+  }
+  .footer p{font-size:12.5px;color:var(--ink-soft);margin:0 0 10px;}
+  .reset-btn{
+    font-size:12.5px;color:var(--ink-soft);background:none;border:1px solid var(--line);
+    border-radius:999px;padding:9px 16px;cursor:pointer;font-family:inherit;min-height:36px;
+  }
+
+  /* ---------- modal (guide) ---------- */
+  .overlay{
+    position:fixed;inset:0;background:rgba(22,35,47,0.45);
+    display:none;align-items:flex-end;justify-content:center;z-index:20;
+  }
+  .overlay.open{display:flex;}
+  .sheet{
+    background:var(--paper);width:100%;max-width:640px;border-radius:20px 20px 0 0;
+    padding:22px 20px calc(26px + env(safe-area-inset-bottom));
+    max-height:85vh;max-height:85dvh;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    transform:translateY(100%);transition:transform .28s ease;
+  }
+  .overlay.open .sheet{transform:translateY(0);}
+  .sheet-handle{width:36px;height:4px;background:var(--line);border-radius:99px;margin:0 auto 16px;}
+  .sheet h2{font-size:19px;margin:0 0 4px;}
+  .sheet .sheet-cat{font-size:13px;color:var(--ink-soft);margin-bottom:16px;}
+  .sheet ol{padding-left:20px;margin:0;}
+  .sheet ol li{margin-bottom:10px;font-size:14.5px;line-height:1.5;}
+  .sheet-close{
+    margin-top:18px;width:100%;min-height:48px;padding:12px;border-radius:10px;border:none;
+    background:var(--blue-dark);color:#fff;font-family:inherit;font-weight:700;font-size:14px;cursor:pointer;
+  }
+
+  /* ---------- modal (mark status: done / blocked) ---------- */
+  .status-mode-row{display:flex;gap:8px;margin:14px 0 4px;}
+  .status-mode-btn{
+    flex:1;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
+    border-radius:10px;padding:10px 8px;font-family:inherit;font-weight:700;font-size:13px;cursor:pointer;
+  }
+  .status-mode-btn.active-done{background:var(--green-soft);border-color:var(--green);color:#2C5F44;}
+  .status-mode-btn.active-blocked{background:#F5E8C9;border-color:var(--gold);color:#7A5B12;}
+  .status-field-label{font-size:13px;color:var(--ink-soft);margin:14px 0 6px;}
+  .status-textarea{
+    width:100%;min-height:78px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+    font-family:inherit;font-size:14px;color:var(--ink);resize:vertical;background:var(--card);
+  }
+  .status-hint{font-size:12px;color:var(--ink-soft);margin-top:6px;}
+  .status-submit{
+    margin-top:16px;width:100%;min-height:48px;padding:12px;border-radius:10px;border:none;
+    font-family:inherit;font-weight:700;font-size:14px;cursor:pointer;color:#fff;
+  }
+  .status-submit.done-submit{background:var(--green);}
+  .status-submit.blocked-submit{background:var(--gold);}
+  .status-submit:disabled{opacity:.45;cursor:not-allowed;}
+  .status-clear-btn{
+    margin-top:10px;width:100%;min-height:40px;padding:10px;border-radius:10px;
+    border:1px solid var(--line);background:none;color:var(--ink-soft);font-family:inherit;
+    font-size:13px;cursor:pointer;
+  }
+
+  /* ---------- «не могу» vs «не делаю» ---------- */
+  .reason-type-row{display:flex;gap:8px;margin:10px 0 2px;}
+  .reason-type-btn{
+    flex:1;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
+    border-radius:10px;padding:9px 8px;font-family:inherit;font-weight:600;font-size:12.5px;
+    line-height:1.3;cursor:pointer;
+  }
+  .reason-type-btn.active{background:var(--blue-soft);border-color:var(--blue);color:var(--blue-dark);}
+  .why-note{font-size:11.5px;color:var(--ink-soft);margin:4px 0 0;line-height:1.4;}
+
+  /* ---------- было/стало ---------- */
+  .compare-overlay{
+    position:fixed;inset:0;background:rgba(22,35,47,0.45);
+    display:none;align-items:center;justify-content:center;z-index:30;padding:16px;
+  }
+  .compare-overlay.open{display:flex;}
+  .compare-card{
+    background:var(--card);border-radius:16px;padding:20px;max-width:420px;width:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+  }
+  .compare-card h3{margin:0 0 14px;font-size:17px;}
+  .compare-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .compare-box{flex:1;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;}
+  .compare-box .lbl{font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.03em;}
+  .compare-box .val{font-family:'PT Serif',serif;font-size:22px;font-weight:700;margin-top:2px;}
+  .compare-arrow{font-size:18px;color:var(--ink-soft);}
+  .compare-note{font-size:13px;color:var(--ink-soft);margin:6px 0 0;line-height:1.45;}
+  .compare-explain{
+    width:100%;min-height:60px;margin-top:12px;border:1px solid var(--line);border-radius:10px;
+    padding:9px 10px;font-family:inherit;font-size:13.5px;color:var(--ink);resize:vertical;background:var(--paper);
+  }
+
+  .profile-row{position:relative;display:flex;align-items:center;gap:12px;margin:0 0 18px;padding:13px 14px;background:linear-gradient(135deg,#0E4A85 0%,#166EC1 100%);border:0;border-radius:16px;cursor:pointer;overflow:hidden;box-shadow:0 8px 22px rgba(14,74,133,.16);}
+  .profile-row::after{content:"";position:absolute;width:110px;height:110px;right:-34px;top:-54px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 18px rgba(255,255,255,.04),0 0 0 36px rgba(255,255,255,.025);pointer-events:none;}
+  
+  .profile-avatar.has-photo{
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    color:transparent !important;
+    border-color:rgba(255,255,255,.22);
+  }
+
+  .profile-avatar{position:relative;z-index:1;width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-family:'PT Serif',serif;font-weight:700;font-size:17px;flex:0 0 auto;}
+  .profile-info{position:relative;z-index:1;flex:1;min-width:0;}
+  .profile-name{font-size:14px;font-weight:800;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .profile-sub{font-size:12px;color:rgba(255,255,255,.78);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
+  .profile-edit-hint{position:relative;z-index:1;font-size:12px;color:#fff;flex:0 0 auto;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.08);}
+  .profile-field-label{font-size:13px;color:var(--ink-soft);margin:14px 0 6px;}
+  .profile-field-label:first-of-type{margin-top:4px;}
+  .profile-input{
+    width:100%;min-height:44px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;
+    font-family:inherit;font-size:14.5px;color:var(--ink);background:var(--card);
+  }
+  .profile-select{
+    width:100%;min-height:44px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;
+    font-family:inherit;font-size:14.5px;color:var(--ink);background:var(--card);cursor:pointer;
+  }
+  .profile-save-btn{
+    margin-top:18px;width:100%;min-height:48px;padding:12px;border-radius:10px;border:none;
+    background:var(--blue-dark);color:#fff;font-family:inherit;font-weight:700;font-size:14px;cursor:pointer;
+  }
+
+  @media (min-width:680px){
+    .task-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+    .day-count .num{font-size:52px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;}
+  }
+
+  /* ---------- redesigned student cabinet ---------- */
+  .profile-overlay{
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .profile-overlay .profile-sheet{
+    width:min(980px, 100%);
+    max-width:980px;
+    max-height:min(88vh, 820px);
+    overflow:auto;
+    background:#fff;
+    border-radius:2px;
+    padding:34px 42px 38px;
+    box-shadow:0 18px 60px rgba(20,45,70,.22);
+    transform:translateY(0);
+  }
+  .profile-overlay.open .profile-sheet{transform:translateY(0);}
+  .profile-title{
+    margin:0;
+    font-family:'Manrope',sans-serif;
+    font-size:28px;
+    line-height:1.2;
+    font-weight:700;
+    color:#20252B;
+  }
+  .profile-title-line{
+    width:72px;
+    height:3px;
+    background:#2D9BD7;
+    margin:16px 0 30px;
+  }
+  .profile-table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    font-size:15px;
+  }
+  .profile-table tr:nth-child(odd) .profile-value{background:#F0F8FC;}
+  .profile-table tr:nth-child(even) .profile-value{background:#fff;}
+  .profile-label{
+    width:34%;
+    padding:16px 18px;
+    background:#58A9D5;
+    color:#fff;
+    font-weight:700;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    vertical-align:middle;
+  }
+  .profile-value{
+    padding:7px 18px;
+    color:#444B52;
+    border-bottom:1px solid #E8EEF2;
+    vertical-align:middle;
+  }
+  .profile-input,
+  .profile-select{
+    width:100%;
+    min-height:42px;
+    box-sizing:border-box;
+    padding:8px 10px;
+    border:1px solid #D9E4EA;
+    border-radius:4px;
+    background:#fff;
+    color:#444B52;
+    font-size:15px;
+    font-family:inherit;
+  }
+  .profile-input:focus,
+  .profile-select:focus{
+    outline:none;
+    border-color:#58A9D5;
+    box-shadow:0 0 0 2px rgba(88,169,213,.14);
+  }
+  .profile-actions{
+    display:flex;
+    gap:12px;
+    margin-top:26px;
+    justify-content:flex-end;
+  }
+  .profile-save-btn.profile-save-wide{
+    width:auto;
+    min-width:190px;
+    margin-top:0;
+    border-radius:4px;
+    background:#1768A8;
+  }
+  .profile-cancel-wide{
+    width:auto !important;
+    min-width:140px;
+    margin-top:0 !important;
+    border-radius:4px !important;
+    background:#fff !important;
+  }
+  @media (max-width:760px){
+    .profile-overlay{padding:10px;}
+    .profile-overlay .profile-sheet{
+      width:100%;
+      max-height:94vh;
+      padding:22px 16px 24px;
+      border-radius:10px;
+    }
+    .profile-title{font-size:23px;}
+    .profile-title-line{margin-bottom:20px;}
+    .profile-table{font-size:13px;}
+    .profile-label{width:40%;padding:12px 10px;}
+    .profile-value{padding:7px 10px;}
+    .profile-input,.profile-select{font-size:13px;}
+    .profile-actions{flex-direction:column;}
+    .profile-save-btn.profile-save-wide,
+    .profile-cancel-wide{width:100% !important;}
+  }
+
+  /* ---------- personal cabinet: screenshot-inspired layout ---------- */
+  .profile-overlay{
+    display:none;
+    align-items:flex-start;
+    justify-content:center;
+    padding:18px 12px 28px;
+    overflow:auto;
+  }
+  .profile-overlay.open{display:flex;}
+
+  .profile-cabinet{
+    width:min(100%, 620px);
+    margin:0 auto;
+    background:#F3F6FA;
+    border-radius:20px;
+    padding:18px 14px 28px;
+    box-shadow:0 18px 55px rgba(20,45,70,.22);
+    color:var(--ink);
+  }
+
+  .profile-cabinet-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:6px 4px 16px;
+  }
+  .profile-cabinet-avatar{
+    width:52px;
+    height:52px;
+    flex:0 0 52px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#2498DB,#1677C4);
+    color:#fff;
+    font-size:22px;
+    font-weight:800;
+  }
+  .profile-cabinet-identity{
+    min-width:0;
+    flex:1;
+  }
+  .profile-cabinet-name{
+    font-size:18px;
+    font-weight:800;
+    line-height:1.2;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .profile-cabinet-sub{
+    margin-top:4px;
+    color:var(--ink-soft);
+    font-size:12.5px;
+  }
+  .profile-cabinet-close{
+    width:38px;
+    height:38px;
+    border:0;
+    border-radius:11px;
+    background:#E8EEF5;
+    color:#627285;
+    font-size:25px;
+    line-height:1;
+    cursor:pointer;
+  }
+
+  .profile-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-bottom:16px;
+  }
+  .profile-stat{
+    min-height:94px;
+    background:#fff;
+    border:1px solid #E7ECF2;
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 4px 14px rgba(24,47,72,.06);
+  }
+  .profile-stat strong{
+    font-family:'PT Serif',serif;
+    font-size:30px;
+    line-height:1;
+  }
+  .profile-stat span{
+    margin-top:7px;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+
+  .profile-info-card,
+  .profile-settings-card{
+    background:#fff;
+    border:1px solid #E7ECF2;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(24,47,72,.07);
+  }
+  .profile-info-card{
+    padding:20px 18px 19px;
+    margin-bottom:16px;
+  }
+  .profile-card-kicker{
+    color:var(--blue);
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:7px;
+  }
+  .profile-info-card h3{
+    margin:0 0 10px;
+    font-size:18px;
+  }
+  .profile-info-card p{
+    margin:4px 0 0;
+    color:var(--ink-soft);
+    font-size:13px;
+    line-height:1.45;
+  }
+
+  .profile-settings-card{
+    padding:20px 18px 18px;
+  }
+  .profile-settings-card h3{
+    margin:0 0 18px;
+    font-size:20px;
+  }
+  .profile-form-label{
+    display:block;
+    margin:13px 0 7px;
+    color:var(--ink-soft);
+    font-size:12px;
+    font-weight:700;
+  }
+  .profile-form-label:first-of-type{margin-top:0;}
+  .profile-modern-input{
+    display:block;
+    width:100%;
+    min-height:46px;
+    box-sizing:border-box;
+    border:1px solid #E0E7EF;
+    border-radius:11px;
+    background:#FAFCFE;
+    color:var(--ink);
+    padding:11px 13px;
+    font:inherit;
+    font-size:14px;
+  }
+  .profile-modern-input:focus{
+    outline:none;
+    border-color:#63A9DC;
+    background:#fff;
+    box-shadow:0 0 0 3px rgba(22,110,193,.10);
+  }
+  .profile-modern-save{
+    width:100%;
+    min-height:48px;
+    margin-top:18px;
+    border:0;
+    border-radius:11px;
+    background:#246BE8;
+    color:#fff;
+    font:inherit;
+    font-size:14px;
+    font-weight:800;
+    cursor:pointer;
+    box-shadow:0 5px 13px rgba(36,107,232,.18);
+  }
+  .profile-modern-save:active{transform:scale(.99);}
+
+  @media (max-width:480px){
+    .profile-overlay{padding:8px 8px 18px;}
+    .profile-cabinet{border-radius:16px;padding:14px 10px 22px;}
+    .profile-stats{gap:9px;}
+    .profile-stat{min-height:82px;}
+    .profile-stat strong{font-size:26px;}
+    .profile-info-card,.profile-settings-card{border-radius:15px;padding:17px 14px;}
+
+  }
+
+
+  /* Avatar upload */
+  .profile-avatar-wrap{
+    flex:0 0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:3px;
+  }
+  .profile-avatar-change{
+    border:0;
+    background:transparent;
+    color:#246BE8;
+    font-size:10px;
+    font-weight:700;
+    padding:2px 4px;
+    cursor:pointer;
+  }
+  .profile-cabinet-avatar.has-photo{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:transparent;
+  }
+
+
+  /* ---------- final profile cabinet layout fix ---------- */
+  .profile-overlay{
+    position:fixed !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    box-sizing:border-box !important;
+    display:none !important;
+    align-items:center !important;
+    justify-content:center !important;
+    padding:18px !important;
+    overflow:auto !important;
+  }
+  .profile-overlay.open{
+    display:flex !important;
+  }
+  .profile-overlay .profile-cabinet{
+    box-sizing:border-box !important;
+    width:min(680px, calc(100vw - 36px)) !important;
+    max-width:680px !important;
+    min-width:0 !important;
+    max-height:calc(100vh - 36px) !important;
+    max-height:calc(100dvh - 36px) !important;
+    margin:0 auto !important;
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+    flex:0 1 680px !important;
+  }
+  .profile-overlay .profile-settings-card{
+    box-sizing:border-box !important;
+    width:100% !important;
+  }
+  .profile-overlay .profile-modern-input{
+    box-sizing:border-box !important;
+    width:100% !important;
+  }
+  @media (max-width:700px){
+    .profile-overlay{
+      align-items:flex-end !important;
+      padding:0 !important;
+    }
+    .profile-overlay .profile-cabinet{
+      width:100% !important;
+      max-width:none !important;
+      max-height:94vh !important;
+      max-height:94dvh !important;
+      border-radius:20px 20px 0 0 !important;
+      flex-basis:100% !important;
+    }
+  }
+
+</style>
 </head>
 <body>
 
@@ -209,6 +876,741 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var CATEGORIES = {
+    docs:  {label:"Документы", color:"#0E4A85"},
+    study: {label:"Учёба",     color:"#0E4A85"},
+    byt:   {label:"Быт",       color:"#0E4A85"},
+    sport: {label:"Спорт",     color:"#0E4A85"},
+    social:{label:"Люди",      color:"#0E4A85"}
+  };
+
+  var TASKS = [
+    {id:"t1",  day:1,  cat:"docs",   title:"Получить студенческий билет",
+      guide:["Прийти в деканат или учебный офис с паспортом и фото 3×4.","Заполнить заявление на месте, если попросят.","Забрать билет либо получить талон на повторное посещение."]},
+    {id:"t2",  day:1,  cat:"docs",   title:"Оформить зачётную книжку",
+      guide:["Обычно выдают в том же кабинете, что и студенческий.","Взять с собой копию паспорта и фото.","Проверить, что ФИО и номер группы в зачётке указаны верно."]},
+    {id:"t3",  day:2,  cat:"study",  title:"Получить доступ в личный кабинет (ЭИОС)",
+      guide:["Найти письмо от университета на личной почте или спросить логин в деканате.","Зайти на портал вуза и сменить временный пароль.","Проверить, что расписание и группа отображаются верно."]},
+    {id:"t4",  day:2,  cat:"study",  title:"Посмотреть расписание на неделю",
+      guide:["Открыть личный кабинет → раздел «Расписание».","Найти свою группу по номеру.","Сохранить расписание в заметки или календарь телефона."]},
+    {id:"t5",  day:2,  cat:"social", title:"Найти чат своей группы",
+      guide:["Спросить у старосты или одногруппников ссылку на чат.","Представиться и уточнить важные объявления.","Обменяться контактами хотя бы с парой человек."]},
+    {id:"t6",  day:3,  cat:"social", title:"Узнать куратора группы и его контакты",
+      guide:["Спросить в деканате, кто куратор вашей группы.","Записать телефон или почту куратора.","Прийти на первую кураторскую встречу, если она назначена."]},
+    {id:"t7",  day:3,  cat:"study",  title:"Найти нужные корпуса и аудитории",
+      guide:["Посмотреть в расписании номера корпусов по каждой паре.","Пройтись по кампусу заранее, до первой пары.","Уточнить у старших студентов короткие маршруты между корпусами."]},
+    {id:"t8",  day:3,  cat:"byt",    title:"Заселиться в общежитие и получить ключи",
+      guide:["Обратиться в студгородок с паспортом и направлением на заселение.","Подписать договор найма и получить пропуск.","Уточнить у коменданта правила и часы работы вахты."]},
+    {id:"t9",  day:5,  cat:"byt",    title:"Пройти медосмотр и сдать справку 086-у",
+      guide:["Уточнить в здравпункте вуза, какие анализы нужны именно у вас.","Пройти осмотр в поликлинике по месту жительства заранее.","Сдать оригинал справки в медицинский кабинет университета."]},
+    {id:"t10", day:5,  cat:"byt",    title:"Оформить студенческий проездной",
+      guide:["Уточнить в деканате или на сайте транспортной компании условия для студентов.","Подготовить студенческий билет и фото для оформления.","Подать заявление онлайн или в пункте обслуживания."]},
+    {id:"t11", day:7,  cat:"sport",  title:"Записаться на физкультуру",
+      guide:["Открыть список секций на сайте кафедры физвоспитания.","Выбрать секцию по интересу и уровню подготовки.","Записаться через личный кабинет или у преподавателя на первом занятии."]},
+    {id:"t12", day:10, cat:"docs",   title:"Оформить карту студента для библиотеки",
+      guide:["Прийти в главную библиотеку вуза со студенческим билетом.","Заполнить читательский формуляр.","Уточнить, как работает электронный каталог и продление книг онлайн."]},
+    {id:"t13", day:10, cat:"docs",   title:"Разобраться со стипендией: сроки и условия",
+      guide:["Найти положение о стипендиях на сайте вуза.","Уточнить в деканате даты первой выплаты.","Проверить, привязана ли карта для перевода стипендии."]},
+    {id:"t14", day:15, cat:"social", title:"Записаться в клуб или секцию по интересам",
+      guide:["Посмотреть список студенческих объединений на сайте вуза.","Прийти на пробную встречу одного-двух клубов.","Записаться туда, где было интереснее всего."]},
+    {id:"t15", day:15, cat:"docs", gender:"male", title:"Оформить справку для военкомата (если нужно)",
+      guide:["Уточнить в деканате, положена ли вам отсрочка.","Собрать справку об обучении и копию студенческого.","Подать документы в военкомат по месту прописки в указанный срок."]},
+    {id:"t16", day:18, cat:"social", title:"Сходить на встречу по адаптации первокурсников",
+      guide:["Проверить расписание кураторских часов на инфостендах или в чате.","Прийти вовремя и подготовить вопросы, если они накопились.","Записать контакты, которые дадут на встрече."]},
+    {id:"t17", day:22, cat:"study",  title:"Проверить успеваемость и посещаемость",
+      guide:["Открыть личный кабинет → раздел «Успеваемость».","Сверить количество пропусков по каждому предмету.","При расхождениях уточнить у преподавателя или в деканате."]},
+    {id:"t18", day:28, cat:"study",  title:"Изучить правила допуска к сессии",
+      guide:["Найти положение о промежуточной аттестации на сайте вуза.","Уточнить у преподавателей условия допуска по их предметам.","Составить список задолженностей, если они есть, и сроки пересдач."]},
+    {id:"t19", day:30, cat:"study",  title:"Узнать расписание зачётов и экзаменов",
+      guide:["Открыть личный кабинет → раздел «Расписание сессии».","Выписать даты и аудитории всех зачётов и экзаменов.","Уточнить у старосты, если в расписании есть неясности."]}
+  ];
+
+  var DAYS_TOTAL = 30;
+  var STORAGE_STATE = "ufu30_state";
+  var STORAGE_START = "ufu30_start";
+  var STORAGE_PROFILE = "ufu30_profile";
+  var RU_MONTHS = ["января","февраля","марта","апреля","мая","июня",
+    "июля","августа","сентября","октября","ноября","декабря"];
+
+  var state = loadState();
+  var startDate = loadStartDate();
+  var profile = loadProfile();
+  var selectedDay = null;
+  var selectedCat = null;
+  var pendingDay = null;
+  var pendingTaskId = null;
+  var pendingMode = null;
+
+  function taskStatus(id){
+    var s = state[id];
+    return s ? s.status : null;
+  }
+
+  function taskVisibleForProfile(task){
+    if(task.gender === "male") return !!(profile && profile.gender === "male");
+    return true;
+  }
+
+  function visibleTasks(){
+    return TASKS.filter(taskVisibleForProfile);
+  }
+
+  function loadState(){
+    try{
+      var raw = localStorage.getItem(STORAGE_STATE);
+      return raw ? JSON.parse(raw) : {};
+    }catch(e){ return {}; }
+  }
+  function saveState(){
+    try{ localStorage.setItem(STORAGE_STATE, JSON.stringify(state)); }catch(e){}
+  }
+  function loadStartDate(){
+    try{
+      var raw = localStorage.getItem(STORAGE_START);
+      return raw ? new Date(raw) : new Date();
+    }catch(e){ return new Date(); }
+  }
+  function saveStartDate(d){
+    try{ localStorage.setItem(STORAGE_START, d.toISOString()); }catch(e){}
+  }
+  function loadProfile(){
+    try{
+      var raw = localStorage.getItem(STORAGE_PROFILE);
+      return raw ? JSON.parse(raw) : null;
+    }catch(e){ return null; }
+  }
+  function saveProfile(p){
+    try{ localStorage.setItem(STORAGE_PROFILE, JSON.stringify(p)); }catch(e){}
+  }
+
+  /*
+   * Synthetic-data generator for development/testing only.
+   * It is intentionally not connected to the UI and never writes to localStorage.
+   * Generated values are explicitly marked as synthetic, so they cannot be
+   * presented as the student's real progress or real mentions.
+   */
+  function generateSyntheticDemoState(seed){
+    var result = {};
+    var n = Number(seed) || 1;
+    visibleTasks().forEach(function(task, index){
+      var value = (n * 31 + index * 17) % 100;
+      if(value < 45){
+        result[task.id] = {
+          status:"done",
+          note:"[СИНТЕТИКА] тестовое подтверждение для проверки интерфейса",
+          ts:0
+        };
+      } else if(value < 58){
+        result[task.id] = {
+          status:"blocked",
+          reasonType:(index % 2 === 0 ? "external" : "internal"),
+          note:"[СИНТЕТИКА] тестовая причина для проверки интерфейса",
+          ts:0
+        };
+      }
+    });
+    return result;
+  }
+
+  function currentDayNumber(){
+    var msPerDay = 24*60*60*1000;
+    var diff = Math.floor((stripTime(new Date()) - stripTime(startDate)) / msPerDay) + 1;
+    if(diff < 1) diff = 1;
+    if(diff > DAYS_TOTAL) diff = DAYS_TOTAL;
+    return diff;
+  }
+  function stripTime(d){
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+  }
+
+  var dayNumEl = document.getElementById("dayNum");
+  var pctLabelEl = document.getElementById("pctLabel");
+  var progressFillEl = document.getElementById("progressFill");
+  var progressCaptionEl = document.getElementById("progressCaption");
+  var paceCaptionEl = document.getElementById("paceCaption");
+  var startDateCaptionEl = document.getElementById("startDateCaption");
+  var dayStripEl = document.getElementById("dayStrip");
+  var dayFilterWrapEl = document.getElementById("dayFilterWrap");
+  var catRowEl = document.getElementById("catRow");
+  var taskListEl = document.getElementById("taskList");
+  var profileRowEl = document.getElementById("profileRow");
+  var profileAvatarEl = document.getElementById("profileAvatar");
+  var profileNameEl = document.getElementById("profileName");
+  var profileSubEl = document.getElementById("profileSub");
+
+  function formatStartDate(d){
+    return "Отсчёт начался: " + d.getDate() + " " + RU_MONTHS[d.getMonth()] + " " + d.getFullYear() + " г.";
+  }
+
+  function dateForDay(day){
+    var base = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
+    base.setDate(base.getDate() + (day - 1));
+    return base;
+  }
+  function formatShortDate(d){
+    var dd = String(d.getDate()).padStart(2, "0");
+    var mm = String(d.getMonth() + 1).padStart(2, "0");
+    return dd + "." + mm;
+  }
+  function formatFullDate(d){
+    return d.getDate() + " " + RU_MONTHS[d.getMonth()];
+  }
+
+  function render(){
+    renderProfile();
+    renderHeader();
+    renderDayStrip();
+    renderDayFilterChip();
+    renderCatRow();
+    renderTaskList();
+    startDateCaptionEl.textContent = formatStartDate(startDate);
+  }
+
+  function initials(name){
+    var parts = name.trim().split(/\s+/).filter(Boolean);
+    if(!parts.length) return "?";
+    var first = parts[0].charAt(0);
+    var second = parts.length > 1 ? parts[1].charAt(0) : "";
+    return (first + second).toUpperCase();
+  }
+  function renderProfile(){
+    if(profile && profile.name){
+      profileNameEl.textContent = profile.name;
+      var subParts = [];
+      if(profile.group) subParts.push(profile.group);
+      if(profile.direction) subParts.push(profile.direction);
+      profileSubEl.textContent = subParts.length ? subParts.join(" · ") : "Профиль заполнен";
+
+      if(profile.avatar){
+        profileAvatarEl.classList.add("has-photo");
+        profileAvatarEl.style.backgroundImage = "url(\"" + profile.avatar + "\")";
+        profileAvatarEl.textContent = "";
+      } else {
+        profileAvatarEl.classList.remove("has-photo");
+        profileAvatarEl.style.backgroundImage = "";
+        profileAvatarEl.textContent = initials(profile.name);
+      }
+    } else {
+      profileAvatarEl.classList.remove("has-photo");
+      profileAvatarEl.style.backgroundImage = "";
+      profileAvatarEl.textContent = "У";
+      profileNameEl.textContent = "Студент ИРИТ-РТФ";
+      profileSubEl.textContent = "УрФУ · Уральский федеральный университет";
+    }
+  }
+
+  function renderHeader(){
+    var today = currentDayNumber();
+    dayNumEl.textContent = today;
+    var visible = visibleTasks();
+    var total = visible.length;
+    var done = visible.filter(function(t){ return taskStatus(t.id) === "done"; }).length;
+    var blocked = visible.filter(function(t){ return taskStatus(t.id) === "blocked"; }).length;
+    var pct = total ? Math.round((done/total)*100) : 0;
+    pctLabelEl.textContent = pct + "%";
+    progressFillEl.style.width = pct + "%";
+    progressCaptionEl.textContent = done + " из " + total + " задач засчитано"
+      + (blocked ? " · " + blocked + " отмечено «не получается»" : "");
+
+    var expectedByToday = visible.filter(function(t){ return t.day <= today; }).length;
+    var doneByToday = visible.filter(function(t){ return t.day <= today && taskStatus(t.id) === "done"; }).length;
+    var diff = doneByToday - expectedByToday;
+    var paceText;
+    if(diff > 0) paceText = "Темп: опережаете график на " + diff + (diff === 1 ? " шаг" : (diff < 5 ? " шага" : " шагов"));
+    else if(diff < 0) paceText = "Темп: отстаёте от графика на " + Math.abs(diff) + (Math.abs(diff) === 1 ? " шаг" : (Math.abs(diff) < 5 ? " шага" : " шагов"));
+    else paceText = "Темп: точно по графику";
+    paceCaptionEl.textContent = paceText;
+  }
+
+  function tasksForDay(day){
+    return visibleTasks().filter(function(t){ return t.day === day; });
+  }
+
+  function renderDayStrip(){
+    var today = currentDayNumber();
+    var html = "";
+    for(var d=1; d<=DAYS_TOTAL; d++){
+      var dTasks = tasksForDay(d);
+      var cls = "day-dot";
+      if(dTasks.length){
+        cls += " has-tasks";
+        var doneCount = dTasks.filter(function(t){ return taskStatus(t.id) === "done"; }).length;
+        var touchedCount = dTasks.filter(function(t){ return taskStatus(t.id) !== null; }).length;
+        if(doneCount === dTasks.length) cls += " done";
+        else if(touchedCount > 0) cls += " partial";
+      }
+      if(d === today) cls += " today";
+      if(d === selectedDay) cls += " selected";
+      html += '<div class="'+cls+'" data-day="'+d+'"><span class="n">'+d+'</span><span class="d">'+formatShortDate(dateForDay(d))+'</span><span class="mark"></span></div>';
+    }
+    dayStripEl.innerHTML = html;
+  }
+
+  function renderDayFilterChip(){
+    if(selectedDay === null){ dayFilterWrapEl.innerHTML = ""; return; }
+    dayFilterWrapEl.innerHTML = '<button class="day-filter-chip" id="clearDayFilter">День '+selectedDay+' · '+formatFullDate(dateForDay(selectedDay))+' · показать все дни ✕</button>';
+  }
+
+  function renderCatRow(){
+    var html = '<button class="cat-chip'+(selectedCat===null?" active":"")+'" data-cat="__all">Все</button>';
+    Object.keys(CATEGORIES).forEach(function(key){
+      html += '<button class="cat-chip'+(selectedCat===key?" active":"")+'" data-cat="'+key+'">'+CATEGORIES[key].label+'</button>';
+    });
+    catRowEl.innerHTML = html;
+  }
+
+  function renderTaskList(){
+    var list = visibleTasks().slice();
+    if(selectedDay !== null) list = list.filter(function(t){ return t.day === selectedDay; });
+    if(selectedCat !== null) list = list.filter(function(t){ return t.cat === selectedCat; });
+
+    if(!list.length){
+      taskListEl.innerHTML = '<div class="empty-state">Задач с такими фильтрами нет. Попробуйте выбрать другой день или категорию.</div>';
+      return;
+    }
+
+    list.sort(function(a,b){ return a.day - b.day; });
+
+    var html = "";
+    list.forEach(function(t){
+      var s = state[t.id];
+      var status = s ? s.status : null;
+      var isDone = status === "done";
+      var isBlocked = status === "blocked";
+      var cardCls = "task-card" + (isDone ? " done" : "") + (isBlocked ? " blocked" : "");
+      var boxCls = "checkbox" + (isDone ? " checked" : "") + (isBlocked ? " blocked" : "");
+      var cat = CATEGORIES[t.cat];
+      var noteHtml = "";
+      if(isDone && s.note){
+        noteHtml = '<div class="task-note artifact">Подтверждение: '+escapeHtml(s.note)+'</div>';
+      } else if(isBlocked && s.note){
+        noteHtml = '<div class="task-note reason">Не получается: '+escapeHtml(s.note)+'</div>';
+      }
+      html += '<div class="'+cardCls+'" style="--cat-color:'+cat.color+'">'
+        + '<div class="checkbox-hit" data-toggle="'+t.id+'" role="checkbox" aria-checked="'+isDone+'">'
+        +   '<div class="'+boxCls+'">'
+        +     '<svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+        +     '<span class="bang">!</span>'
+        +   '</div>'
+        + '</div>'
+        + '<div class="task-body">'
+        +   '<div class="task-title'+(isDone?" done":"")+'">'+t.title+'</div>'
+        +   '<div class="task-meta">'
+        +     '<span class="task-tag">День '+t.day+' · '+formatFullDate(dateForDay(t.day))+' · '+cat.label+'</span>'
+        +     '<button class="guide-link" data-guide="'+t.id+'">Как это сделать?</button>'
+        +   '</div>'
+        +   noteHtml
+        + '</div>'
+        + '</div>';
+    });
+    taskListEl.innerHTML = html;
+  }
+
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  var overlayEl = document.getElementById("overlay");
+  var sheetCatEl = document.getElementById("sheetCat");
+  var sheetTitleEl = document.getElementById("sheetTitle");
+  var sheetStepsEl = document.getElementById("sheetSteps");
+
+  function openGuide(id, context){
+    var t = TASKS.filter(function(x){ return x.id === id; })[0];
+    if(!t) return;
+    sheetCatEl.textContent = CATEGORIES[t.cat].label;
+    sheetTitleEl.textContent = t.title;
+    var introHtml = "";
+    if(context === "external"){
+      introHtml = '<p style="font-size:13.5px;color:#7A5B12;background:#F5E8C9;padding:8px 10px;border-radius:8px;margin:0 0 10px;">Похоже, вам нужна помощь другого человека. Не решайте это в одиночку — сначала свяжитесь с куратором или деканатом, а после уточните шаги ниже.</p>';
+    } else if(context === "internal"){
+      introHtml = '<p style="font-size:13.5px;color:var(--blue-dark);background:var(--blue-soft);padding:8px 10px;border-radius:8px;margin:0 0 10px;">Ничего страшного — вот с чего проще всего начать прямо сейчас, одним небольшим действием.</p>';
+    }
+    if(t.guide && t.guide.length){
+      sheetStepsEl.innerHTML = introHtml + "<ol style='padding-left:20px;margin:0;'>" + t.guide.map(function(s){ return "<li>"+s+"</li>"; }).join("") + "</ol>";
+    } else {
+      sheetStepsEl.innerHTML = introHtml + '<p style="font-size:14px;color:var(--ink-soft);line-height:1.5;">Данных для точной инструкции сейчас нет. Мы не будем придумывать ответ или подменять отсутствие данных догадкой — уточните информацию у куратора или в деканате.</p>';
+    }
+    overlayEl.classList.add("open");
+  }
+  function closeGuide(){ overlayEl.classList.remove("open"); }
+
+  var statusOverlayEl = document.getElementById("statusOverlay");
+  var statusSheetCatEl = document.getElementById("statusSheetCat");
+  var statusSheetTitleEl = document.getElementById("statusSheetTitle");
+  var modeDoneBtn = document.getElementById("modeDoneBtn");
+  var modeBlockedBtn = document.getElementById("modeBlockedBtn");
+  var doneFieldsEl = document.getElementById("doneFields");
+  var blockedFieldsEl = document.getElementById("blockedFields");
+  var artifactInputEl = document.getElementById("artifactInput");
+  var reasonInputEl = document.getElementById("reasonInput");
+  var submitDoneBtn = document.getElementById("submitDoneBtn");
+  var submitBlockedBtn = document.getElementById("submitBlockedBtn");
+  var statusClearBtn = document.getElementById("statusClearBtn");
+  var reasonExternalBtn = document.getElementById("reasonExternalBtn");
+  var reasonInternalBtn = document.getElementById("reasonInternalBtn");
+  var reasonTypeHintEl = document.getElementById("reasonTypeHint");
+  var pendingReasonType = null;
+
+  function openStatusModal(id){
+    var t = TASKS.filter(function(x){ return x.id === id; })[0];
+    if(!t) return;
+    pendingTaskId = id;
+    var existing = state[id];
+    statusSheetCatEl.textContent = CATEGORIES[t.cat].label;
+    statusSheetTitleEl.textContent = t.title;
+    artifactInputEl.value = (existing && existing.status === "done") ? existing.note : "";
+    reasonInputEl.value = (existing && existing.status === "blocked") ? existing.note : "";
+    setReasonType(existing && existing.status === "blocked" ? (existing.reasonType || null) : null);
+    statusClearBtn.style.display = existing ? "block" : "none";
+    setStatusMode(existing ? existing.status : "done");
+    updateSubmitState();
+    statusOverlayEl.classList.add("open");
+  }
+  function closeStatusModal(){
+    statusOverlayEl.classList.remove("open");
+    pendingTaskId = null;
+    pendingMode = null;
+  }
+  function setStatusMode(mode){
+    pendingMode = mode;
+    modeDoneBtn.classList.toggle("active-done", mode === "done");
+    modeBlockedBtn.classList.toggle("active-blocked", mode === "blocked");
+    doneFieldsEl.style.display = mode === "done" ? "block" : "none";
+    blockedFieldsEl.style.display = mode === "blocked" ? "block" : "none";
+  }
+  function setReasonType(type){
+    pendingReasonType = type;
+    reasonExternalBtn.classList.toggle("active", type === "external");
+    reasonInternalBtn.classList.toggle("active", type === "internal");
+    if(type === "external"){
+      reasonTypeHintEl.textContent = "Нужна информация о том, кто может помочь — куратор или деканат. Это не жалоба, а понятная просьба о поддержке.";
+    } else if(type === "internal"){
+      reasonTypeHintEl.textContent = "Без проблем: подскажем один маленький первый шаг, чтобы сдвинуться с места.";
+    } else {
+      reasonTypeHintEl.textContent = "Выберите, что точнее описывает ситуацию — это нужно, чтобы дать подходящую подсказку, а не общий совет.";
+    }
+    updateSubmitState();
+  }
+  function updateSubmitState(){
+    /*
+     * A step is counted only when the user supplies a confirmation/artifact.
+     * The field is deliberately required; without it the "done" action is unavailable.
+     */
+    submitDoneBtn.disabled = artifactInputEl.value.trim().length < 3;
+    submitBlockedBtn.disabled = reasonInputEl.value.trim().length < 3 || !pendingReasonType;
+  }
+
+  modeDoneBtn.addEventListener("click", function(){ setStatusMode("done"); });
+  modeBlockedBtn.addEventListener("click", function(){ setStatusMode("blocked"); });
+  reasonExternalBtn.addEventListener("click", function(){ setReasonType("external"); });
+  reasonInternalBtn.addEventListener("click", function(){ setReasonType("internal"); });
+  artifactInputEl.addEventListener("input", updateSubmitState);
+  reasonInputEl.addEventListener("input", updateSubmitState);
+
+  submitDoneBtn.addEventListener("click", function(){
+    if(!pendingTaskId || artifactInputEl.value.trim().length === 0) return;
+    var before = snapshotProgress();
+    state[pendingTaskId] = { status: "done", note: artifactInputEl.value.trim(), ts: Date.now() };
+    saveState();
+    closeStatusModal();
+    render();
+    var after = snapshotProgress();
+    showCompare(before, after, "Шаг засчитан только сейчас — потому что появилось подтверждение (артефакт).");
+  });
+  submitBlockedBtn.addEventListener("click", function(){
+    if(!pendingTaskId || reasonInputEl.value.trim().length === 0 || !pendingReasonType) return;
+    var id = pendingTaskId;
+    var reasonType = pendingReasonType;
+    var before = snapshotProgress();
+    state[id] = { status: "blocked", reasonType: reasonType, note: reasonInputEl.value.trim(), ts: Date.now() };
+    saveState();
+    closeStatusModal();
+    render();
+    var after = snapshotProgress();
+    showCompare(before, after, reasonType === "external"
+      ? "Прогресс не изменился — шаг помечен как требующий помощи."
+      : "Прогресс не изменился — ниже маленький шаг, чтобы начать.");
+    openGuide(id, reasonType);
+  });
+  statusClearBtn.addEventListener("click", function(){
+    if(!pendingTaskId) return;
+    delete state[pendingTaskId];
+    saveState();
+    closeStatusModal();
+    render();
+  });
+  document.getElementById("statusCancelBtn").addEventListener("click", closeStatusModal);
+  statusOverlayEl.addEventListener("click", function(e){ if(e.target === statusOverlayEl) closeStatusModal(); });
+
+  var compareOverlayEl = document.getElementById("compareOverlay");
+  var compareBeforeEl = document.getElementById("compareBefore");
+  var compareAfterEl = document.getElementById("compareAfter");
+  var compareNoteEl = document.getElementById("compareNote");
+  var compareExplainEl = document.getElementById("compareExplain");
+
+  function snapshotProgress(){
+    return { pct: pctLabelEl.textContent, pace: paceCaptionEl.textContent };
+  }
+  function showCompare(before, after, note){
+    compareBeforeEl.textContent = before.pct;
+    compareAfterEl.textContent = after.pct;
+    compareNoteEl.textContent = note + " " + (before.pace !== after.pace ? ("Темп: было «" + before.pace.replace("Темп: ","") + "», стало «" + after.pace.replace("Темп: ","") + "».") : "");
+    compareExplainEl.value = "";
+    compareOverlayEl.classList.add("open");
+  }
+  document.getElementById("compareCloseBtn").addEventListener("click", function(){
+    compareOverlayEl.classList.remove("open");
+  });
+  compareOverlayEl.addEventListener("click", function(e){ if(e.target === compareOverlayEl) compareOverlayEl.classList.remove("open"); });
+
+  var startOverlayEl = document.getElementById("startOverlay");
+  var startSheetTitleEl = document.getElementById("startSheetTitle");
+  var startSheetTextEl = document.getElementById("startSheetText");
+
+  function openStartPopup(day, count){
+    pendingDay = day;
+    startSheetTitleEl.textContent = "День " + day + " · " + formatFullDate(dateForDay(day));
+    startSheetTextEl.textContent = "На этот день запланировано задач: " + count +
+      ". Отметьте, что уже сделано, или посмотрите, с чего начать.";
+    startOverlayEl.classList.add("open");
+  }
+  function closeStartPopup(){
+    startOverlayEl.classList.remove("open");
+    pendingDay = null;
+  }
+
+  document.getElementById("sheetClose").addEventListener("click", closeGuide);
+  overlayEl.addEventListener("click", function(e){ if(e.target === overlayEl) closeGuide(); });
+
+  document.getElementById("startSheetGo").addEventListener("click", function(){
+    if(pendingDay !== null){ selectedDay = pendingDay; }
+    closeStartPopup();
+    render();
+  });
+  document.getElementById("startSheetCancel").addEventListener("click", closeStartPopup);
+  startOverlayEl.addEventListener("click", function(e){ if(e.target === startOverlayEl) closeStartPopup(); });
+
+  dayStripEl.addEventListener("wheel", function(e){
+    if(dayStripEl.scrollWidth <= dayStripEl.clientWidth) return;
+    var delta = Math.abs(e.deltaX) >= Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if(delta === 0) return;
+    e.preventDefault();
+    dayStripEl.scrollLeft += delta;
+  }, {passive:false});
+
+  dayStripEl.addEventListener("click", function(e){
+    var dot = e.target.closest(".day-dot");
+    if(!dot) return;
+    var d = parseInt(dot.getAttribute("data-day"), 10);
+    if(selectedDay === d){
+      selectedDay = null;
+      render();
+      return;
+    }
+    var dTasks = tasksForDay(d);
+    if(dTasks.length){
+      openStartPopup(d, dTasks.length);
+    } else {
+      selectedDay = d;
+      render();
+    }
+  });
+
+  dayFilterWrapEl.addEventListener("click", function(e){
+    if(e.target.id === "clearDayFilter"){ selectedDay = null; render(); }
+  });
+
+  catRowEl.addEventListener("wheel", function(e){
+    if(catRowEl.scrollWidth <= catRowEl.clientWidth) return;
+    var delta = Math.abs(e.deltaX) >= Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if(delta === 0) return;
+    e.preventDefault();
+    catRowEl.scrollLeft += delta;
+  }, {passive:false});
+
+  catRowEl.addEventListener("click", function(e){
+    var chip = e.target.closest(".cat-chip");
+    if(!chip) return;
+    var cat = chip.getAttribute("data-cat");
+    selectedCat = (cat === "__all") ? null : cat;
+    render();
+  });
+
+  taskListEl.addEventListener("click", function(e){
+    var toggle = e.target.closest("[data-toggle]");
+    var guideBtn = e.target.closest("[data-guide]");
+    if(toggle){
+      openStatusModal(toggle.getAttribute("data-toggle"));
+    } else if(guideBtn){
+      openGuide(guideBtn.getAttribute("data-guide"));
+    }
+  });
+
+  document.getElementById("startDateBtn").addEventListener("click", function(){
+    var current = startDate.toISOString().slice(0,10);
+    var input = prompt("Укажите дату начала отсчёта (ГГГГ-ММ-ДД):", current);
+    if(!input) return;
+    var parsed = new Date(input);
+    if(isNaN(parsed.getTime())){ alert("Не получилось распознать дату. Формат: 2026-09-01"); return; }
+    startDate = parsed;
+    saveStartDate(startDate);
+    render();
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", function(){
+    if(!confirm("Удалить весь профиль? Прогресс, отметки, дата начала и личные данные будут стёрты без возможности восстановления.")) return;
+    state = {};
+    profile = null;
+    try{
+      localStorage.removeItem(STORAGE_STATE);
+      localStorage.removeItem(STORAGE_START);
+      localStorage.removeItem(STORAGE_PROFILE);
+    }catch(e){}
+    startDate = new Date();
+    render();
+  });
+
+  var profileOverlayEl = document.getElementById("profileOverlay");
+  var profileNameInputEl = document.getElementById("profileNameInput");
+  var profileGenderInputEl = document.getElementById("profileGenderInput");
+  var profileGroupInputEl = document.getElementById("profileGroupInput");
+  var profileDirInputEl = document.getElementById("profileDirInput");
+  var profileEducationInputEl = document.getElementById("profileEducationInput");
+  var profileStudyFormInputEl = document.getElementById("profileStudyFormInput");
+  var profileEmailInputEl = document.getElementById("profileEmailInput");
+  var profileAvatarInputEl = document.getElementById("profileAvatarInput");
+  var profileAvatarChangeBtnEl = document.getElementById("profileAvatarChangeBtn");
+
+  function openProfileModal(){
+    profileNameInputEl.value = profile && profile.name ? profile.name : "";
+    profileGenderInputEl.value = profile && profile.gender ? profile.gender : "";
+    profileGroupInputEl.value = profile && profile.group ? profile.group : "";
+    profileDirInputEl.value = profile && profile.direction ? profile.direction : "";
+    profileEducationInputEl.value = profile && profile.education ? profile.education : "";
+    profileStudyFormInputEl.value = profile && profile.studyForm ? profile.studyForm : "";
+    profileEmailInputEl.value = profile && profile.email ? profile.email : "";
+
+    var cabinetNameEl = document.getElementById("profileCabinetName");
+    var cabinetAvatarEl = document.getElementById("profileCabinetAvatar");
+    var infoGroupEl = document.getElementById("profileInfoGroup");
+    var infoDirectionEl = document.getElementById("profileInfoDirection");
+
+    var displayName = profile && profile.name ? profile.name : "Студент ИРИТ-РТФ";
+    var displayGroup = profile && profile.group ? profile.group : "Учебная группа не указана";
+    var displayDirection = profile && profile.direction ? profile.direction : "Направление подготовки не указано";
+
+    if(cabinetNameEl) cabinetNameEl.textContent = displayName;
+    if(cabinetAvatarEl){
+      var first = displayName.trim().charAt(0);
+      cabinetAvatarEl.textContent = first ? first.toUpperCase() : "А";
+    }
+    if(infoGroupEl) infoGroupEl.textContent = displayGroup;
+    if(infoDirectionEl) infoDirectionEl.textContent = displayDirection;
+
+    var cabinetAvatar = document.getElementById("profileCabinetAvatar");
+    if(cabinetAvatar){
+      if(profile && profile.avatar){
+        cabinetAvatar.classList.add("has-photo");
+        cabinetAvatar.style.backgroundImage = "url(" + profile.avatar + ")";
+        cabinetAvatar.textContent = "";
+      } else {
+        cabinetAvatar.classList.remove("has-photo");
+        cabinetAvatar.style.backgroundImage = "";
+        var firstAvatarLetter = displayName.trim().charAt(0);
+        cabinetAvatar.textContent = firstAvatarLetter ? firstAvatarLetter.toUpperCase() : "А";
+      }
+    }
+
+    profileOverlayEl.classList.add("open");
+  }
+  function closeProfileModal(){
+    profileOverlayEl.classList.remove("open");
+  }
+  profileRowEl.addEventListener("click", openProfileModal);
+  document.getElementById("profileCancelBtn").addEventListener("click", closeProfileModal);
+  profileOverlayEl.addEventListener("click", function(e){ if(e.target === profileOverlayEl) closeProfileModal(); });
+  
+  if(profileAvatarChangeBtnEl && profileAvatarInputEl){
+    profileAvatarChangeBtnEl.addEventListener("click", function(){
+      profileAvatarInputEl.click();
+    });
+
+    profileAvatarInputEl.addEventListener("change", function(){
+      var file = profileAvatarInputEl.files && profileAvatarInputEl.files[0];
+      if(!file) return;
+
+      if(file.type.indexOf("image/") !== 0){
+        alert("Выберите файл изображения.");
+        profileAvatarInputEl.value = "";
+        return;
+      }
+
+      var reader = new FileReader();
+      reader.onload = function(e){
+        if(!profile) profile = {};
+        profile.avatar = e.target.result;
+        saveProfile(profile);
+
+        var avatar = document.getElementById("profileCabinetAvatar");
+        if(avatar){
+          avatar.classList.add("has-photo");
+          avatar.style.backgroundImage = "url(" + e.target.result + ")";
+          avatar.textContent = "";
+        }
+
+        var mainAvatar = document.getElementById("profileAvatar");
+        if(mainAvatar){
+          mainAvatar.classList.add("has-photo");
+          mainAvatar.style.backgroundImage = "url(\"" + e.target.result + "\")";
+          mainAvatar.textContent = "";
+        }
+        renderProfile();
+      };
+      reader.readAsDataURL(file);
+      profileAvatarInputEl.value = "";
+    });
+  }
+
+  document.getElementById("profileSaveBtn").addEventListener("click", function(){
+    var name = profileNameInputEl.value.trim();
+    var gender = profileGenderInputEl.value;
+    var group = profileGroupInputEl.value.trim();
+    var direction = profileDirInputEl.value.trim();
+    var education = profileEducationInputEl.value;
+    var studyForm = profileStudyFormInputEl.value;
+    var email = profileEmailInputEl.value.trim();
+
+    var existingAvatar = profile && profile.avatar ? profile.avatar : "";
+    if(!name && !gender && !group && !direction && !education && !studyForm && !email && !existingAvatar){
+      profile = null;
+      try{ localStorage.removeItem(STORAGE_PROFILE); }catch(e){}
+    } else {
+      profile = {
+        name: name,
+        gender: gender,
+        group: group,
+        direction: direction,
+        education: education,
+        studyForm: studyForm,
+        email: email,
+        avatar: profile && profile.avatar ? profile.avatar : ""
+      };
+      saveProfile(profile);
+    }
+    closeProfileModal();
+    render();
+  });
+
+
+  render();
+})();
+</script>
 </body>
 </html>
